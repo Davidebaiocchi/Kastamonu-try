@@ -15,7 +15,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     padding-top: 20px;
     background-color: white;
     z-index: 1;
@@ -24,13 +24,12 @@
 #logo-header {
     cursor: pointer;
     height: 70%;
-    margin-left: 100px;
     margin-right: 150px;
     position: relative;
     bottom: 5px;
 }
 
-.btn-header {
+header button {
     cursor: pointer;
     background-color: white;
     text-transform: uppercase;
@@ -41,14 +40,15 @@
     bottom: 15px;
 }
 
-header .btn-header:hover {
+header button:hover {
     color: rgb(4, 106, 238);
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .search {
+    cursor: pointer;
     position: relative;
-    left: 480px;
+    left: 200px;
     font-size: 25px;
     bottom: 15px;
     background-color: white;
@@ -78,8 +78,11 @@ header .btn-header:hover {
 }
 
 .image2 {
-    border: 3px solid rgb(0, 0, 0);
-}
+    border: 5px solid rgb(0, 0, 0);
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}   
 
 .slider-wrapper .image img {
     height: 100%;
@@ -137,7 +140,69 @@ header .btn-header:hover {
     margin-right: 80px;
 }
 
+
+/* ______________INDUSTRIESS & BANNER____________ */
 .title-industries {
     font-size: 30px;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
+
+
+.container-banner-a-4 {
+    margin-top: 50px;
+}
+
+.row .left-banner {
+    width: 50%;
+    text-align: left;
+    padding: 50px;
+    font-size: 19px;
+    border: 1px solid black;
+    color: grey;
+}
+
+.row {
+    display: flex;
+    margin: 0 10px
+}
+
+.row-2 {
+    display: flex;
+    margin: 0 10px;
+    margin-bottom: 100px;
+}
+
+.row .right-banner {
+    background-image: url(https://www.kastamonuentegre.com.tr/images/sitelayout/harita.jpg);
+    width: 50%;
+    border: 1px solid black;
+    height: 410px;
+}
+
+.container-banner-a-4 h2 {
+    font-size: 23px;
+    color: rgb(136, 255, 0);
+}
+
+.row-2 .left-banner {
+    background-image: url(https://www.kastamonuentegre.com.tr/images/uploads/banner/ecc24f7f963747e7b4e62f912e41b67b_2.jpg);
+    height: 410px;
+    width: 50%;
+    border: 1px solid black;
+    background-size: cover;
+}
+
+.row-2 .right-banner {
+    width: 50%;
+    text-align: left;
+    padding: 40px;
+    font-size: 19px;
+    color: grey;
+    border: 1px solid black;
+}
+
+.row-2 .right-banner h2 {
+    margin-top: 100px;
+}
+
