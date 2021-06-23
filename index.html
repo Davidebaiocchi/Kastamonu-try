@@ -95,6 +95,27 @@
                 </div>
             </div>
         </div>
+
+        <h1 class="title-industries">Our Industries :</h1>
+        <div id="app2" class="jumbo2">
+            <div class="slider-wrapper">
+    
+                <!-- pulsante back -->
+                <div class="arrow back" @click="prevPhoto">
+                    <i class="fas fa-arrow-circle-left"></i>
+                </div>
+    
+                <!-- immagini -->
+                <div class="image2">
+                    <img :src="photos[counter]" alt="">
+                </div>
+    
+                <!-- pulsante next -->
+                <div class="arrow next" @click="nextPhoto">
+                    <i class="fas fa-arrow-circle-right"></i>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="js/script.js"></script>
