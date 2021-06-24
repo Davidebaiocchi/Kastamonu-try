@@ -23,10 +23,9 @@
 
 #logo-header {
     cursor: pointer;
-    height: 70%;
-    margin-right: 150px;
+    height: 100%;
     position: relative;
-    bottom: 5px;
+    bottom: 15px;
 }
 
 header button {
@@ -37,21 +36,26 @@ header button {
     font-family: 'Open Sans', sans-serif;
     margin-left: 30px;
     position: relative;
-    bottom: 15px;
+    bottom: 35px;
 }
 
 header button:hover {
     color: rgb(4, 106, 238);
-    font-size: 30px;
 }
 
 .search {
     cursor: pointer;
-    position: relative;
-    left: 200px;
     font-size: 25px;
-    bottom: 15px;
+    bottom: 35px;
     background-color: white;
+}
+
+.left-btn {
+    margin-left: 300px;
+}
+
+.right-btn {
+    margin-right: 400px;
 }
 
 
@@ -105,6 +109,10 @@ header button:hover {
     justify-content: space-around;
 }
 
+.fasciablu img:hover {
+    cursor: pointer;
+}
+
 .description-chi-siamo {
     width: 30%;
     font-family: 'Roboto', sans-serif;
@@ -148,7 +156,6 @@ header button:hover {
     margin-bottom: 10px;
 }
 
-
 .container-banner-a-4 {
     margin-top: 50px;
 }
@@ -173,12 +180,25 @@ header button:hover {
     margin-bottom: 100px;
 }
 
+.arrow:hover {
+    color: rgb(60, 0, 255);
+}
+
 .row .right-banner {
     background-image: url(https://www.kastamonuentegre.com.tr/images/sitelayout/harita.jpg);
     width: 50%;
-    border: 1px solid black;
+    border: 3px solid black;
+    filter: blur(10px); -webkit-filter: blur(10px);
     height: 410px;
+    cursor: pointer;
 }
+
+
+/* effetto hover bg ------------------------------ */
+.row .right-banner:hover {
+    filter: blur(0px); -webkit-filter: blur(0px);
+}
+
 
 .container-banner-a-4 h2 {
     font-size: 23px;
@@ -189,10 +209,17 @@ header button:hover {
     background-image: url(https://www.kastamonuentegre.com.tr/images/uploads/banner/ecc24f7f963747e7b4e62f912e41b67b_2.jpg);
     height: 410px;
     width: 50%;
-    border: 1px solid black;
+    border: 3px solid black;
+    filter: blur(10px); -webkit-filter: blur(10px);
     background-size: cover;
+    cursor: pointer;
 }
 
+
+/* effetto hover bg ------------------------------ */
+.row-2 .left-banner:hover {
+    filter: blur(0); -webkit-filter: blur(0);
+}
 .row-2 .right-banner {
     width: 50%;
     text-align: left;
@@ -206,3 +233,15 @@ header button:hover {
     margin-top: 100px;
 }
 
+
+/* ___________________FOOTER___________________ */
+footer {
+    background-color: #01011a;
+    height: 300px;
+    padding:50px;
+    text-align: left;
+}
+
+.logo-footer {
+    width: 200px;
+}

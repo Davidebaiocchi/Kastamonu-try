@@ -21,15 +21,15 @@
     <div class="main-container">
         <header>
             <nav class="navbar-header">
-                <!-- Navbar content -->
                 <img id="logo-header" src="img/logo-nuobo.png" alt="">
-                <button class="btn-header">home</i></button>
+                <!-- Navbar content -->
+                <button class="btn-header left-btn">home</i></button>
                 <button class="btn-header">prodotti</i></button>
                 <button class="btn-header">gruppo</i></button>
                 <button class="btn-header">news</i></button>
                 <button class="btn-header">azienda</i></button>
                 <button class="btn-header">blog</i></button>
-                <button class="btn-header">contatti</i></button>
+                <button class="btn-header right-btn">contatti</i></button>
                 <button class="search"><i class="fas fa-search"></i></button>
             </nav>
         </header>
@@ -98,13 +98,13 @@
             </div>
         </div>
 
-        <h1 class="title-industries">Our Industries :</h1>
+        <h2 class="title-industries">Our Industries :</h2>
         <div id="app2" class="jumbo2">
             <div class="slider-wrapper">
     
                 <!-- pulsante back -->
                 <div class="arrow back" @click="prevPhoto">
-                    <i class="fas fa-arrow-circle-left"></i>
+                    <i class="fas fa-chevron-left"></i>
                 </div>
     
                 <!-- immagini -->
@@ -114,7 +114,7 @@
     
                 <!-- pulsante next -->
                 <div class="arrow next" @click="nextPhoto">
-                    <i class="fas fa-arrow-circle-right"></i>
+                    <i class="fas fa-chevron-right"></i>
                 </div>
             </div>
         </div>
@@ -142,8 +142,12 @@
             </div>
             
         </div>
-
+        
+        <footer>
+            <img class="logo-footer" src="img/logo-nuobo.png" alt="">
+        </footer>
     </div>
+
 
 
     <script src="js/script.js"></script>
